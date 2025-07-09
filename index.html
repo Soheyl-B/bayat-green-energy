@@ -1,0 +1,287 @@
+.<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="شرکت برق و انرژی بیات؛ ارائه‌دهنده خدمات نصب پنل خورشیدی، دوربین امنیتی، و تجهیزات انرژی پاک در ایران.">
+  <title>شرکت برق و انرژی بیات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.9;
+      scroll-behavior: smooth;
+      background: #f5f5f5;
+    }
+    header {
+      background: rgba(2, 136, 209, 0.9);
+      color: white;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header img.logo {
+      height: 50px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      flex: 1;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffe082;
+    }
+    #hero {
+      position: relative;
+      height: 80vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    #hero video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+    #hero .content {
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      padding: 40px 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section h2 {
+      text-align: center;
+      color: #0288d1;
+    }
+    .services, .products-list, .reviews-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service, .product-item, .review-item {
+      background: #fafafa;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service:hover, .product-item:hover, .review-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #0288d1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #026ca0;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #0288d1;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #026ca0;
+    }
+    button:focus {
+      outline: 2px solid #ffe082;
+      outline-offset: 2px;
+    }
+    footer {
+      background: #0288d1;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      header h1 {
+        font-size: 18px;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAoCAYAAAAbgDcRAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABwESAAMAAAABAAEAAIdpAAQAAAABAAAAVgAAAAAAAABWAAAAAQAAAAYAAAAWAAAAAFgAAAAoAAAAVGhlIGJlc3QgbG9nbyBldmVyIQAAAAAAAACxUAEAAACPSURBVHgB7dZBDQAgEATB3v+VqbhihAvjeJfm6x2QapwCAAAAAAAAAAAAAAAAACChML+m4yo3aDEgbWtQKdYYU5w1rAphhtQKdYYU5w1rAphhtQKdYYU5w1rAphhtQKdYYU5w1rAphhtQKdYYU5w1rAphhtQKdYYU5w1rApjhtwF7eAKNfxsyFsAAAAASUVORK5CYII=" alt="لوگو شرکت" class="logo">
+  <h1>شرکت برق و انرژی بیات</h1>
+  <nav>
+    <a href="#services">خدمات</a>
+    <a href="#products">تجهیزات</a>
+    <a href="#about">درباره ما</a>
+    <a href="#reviews">نظرات</a>
+    <a href="#contact">تماس</a>
+  </nav>
+</header>
+
+<main>
+  <section id="hero" class="show">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+      مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+    </video>
+    <div class="content">
+      <h2>به آینده سبز خوش آمدید</h2>
+      <p>پیشرو در انرژی خورشیدی و سیستم‌های امنیتی مدرن</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>خدمات ما</h2>
+    <div class="services">
+      <div class="service">
+        <h3>نصب دوربین و دزدگیر</h3>
+        <p>نصب حرفه‌ای سیستم‌های امنیتی، طراحی دقیق و پشتیبانی عالی.</p>
+      </div>
+      <div class="service">
+        <h3>نصب پنل خورشیدی</h3>
+        <p>طراحی و اجرای کامل سیستم‌های خورشیدی برای خانه و کسب‌وکار.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>تجهیزات ما</h2>
+    <div class="products-list">
+      <div class="product-item">
+        <h3>پنل خورشیدی 400W</h3>
+        <p>بازده بالا، مقاوم در برابر شرایط مختلف آب‌وهوایی.</p>
+      </div>
+      <div class="product-item">
+        <h3>باتری لیتیومی</h3>
+        <p>ذخیره‌سازی بهینه انرژی با طول عمر بالا.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>درباره ما</h2>
+    <p>شرکت برق و انرژی بیات با بیش از ۱۰ سال تجربه، پیشرو در زمینه انرژی‌های نو و سیستم‌های امنیتی است. ما متعهد به کیفیت و آینده‌ای سبز هستیم.</p>
+  </section>
+
+  <section id="reviews">
+    <h2>نظرات مشتریان</h2>
+    <div class="reviews-list">
+      <div class="review-item">
+        <h4>علیرضا مرادی</h4>
+        <p>واقعا از کیفیت نصب دوربین‌ها راضی‌ام. تیم حرفه‌ای و پاسخگو.</p>
+      </div>
+      <div class="review-item">
+        <h4>نسترن یوسفی</h4>
+        <p>پنل خورشیدی عالی بود، مصرف برق‌مون خیلی کم شد. مرسی از تیم بیات!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>تماس با ما</h2>
+    <form>
+      <label for="name">نام</label>
+      <input type="text" id="name" name="name" placeholder="نام">
+
+      <label for="email">ایمیل</label>
+      <input type="email" id="email" name="email" placeholder="ایمیل">
+
+      <label for="message">پیام</label>
+      <textarea id="message" name="message" placeholder="پیام"></textarea>
+
+      <button type="submit" lang="fa">ارسال پیام</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  © 2025 شرکت برق و انرژی بیات - تمامی حقوق محفوظ است
+</footer>
+
+<script>
+  const sections = document.querySelectorAll("section");
+  window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        sec.classList.add("show");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
